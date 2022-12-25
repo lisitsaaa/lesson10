@@ -1,7 +1,5 @@
 package task1;
 
-import java.util.SplittableRandom;
-
 public class MethodForString {
 
     public static void twoBlockOfFourDigits(String docNum) {
@@ -30,7 +28,7 @@ public class MethodForString {
 
     public static void printLettersInUppercase(String docNum) {
         StringBuilder res = new StringBuilder();
-        
+
         res.append(docNum, 5, 8).append("/").
                 append(docNum, 14, 17).append("/").
                 append(docNum.charAt(19)).append("/").
