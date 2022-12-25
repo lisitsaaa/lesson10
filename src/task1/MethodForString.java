@@ -29,28 +29,30 @@ public class MethodForString {
     }
 
     public static void printLettersInUppercase(String docNum) {
-        StringBuilder res = new StringBuilder(docNum.substring(5, 8) + "/" +
-                docNum.substring(14, 17) + "/" +
-                docNum.charAt(19) + "/" +
-                docNum.charAt(21));
+        StringBuilder res = new StringBuilder();
+        
+        res.append(docNum, 5, 8).append("/").
+                append(docNum, 14, 17).append("/").
+                append(docNum.charAt(19)).append("/").
+                append(docNum.charAt(21));
 
         res = new StringBuilder("Letters: " + res.toString().toUpperCase());
 
         System.out.println(res);
     }
 
-    public static void abcEqualsIgnoreCase(String docNum){
+    public static void abcEqualsIgnoreCase(String docNum) {
         boolean equals = docNum.equalsIgnoreCase("abc");
         System.out.println(equals);
     }
 
-    public static void equalsFirstDigits(String docNum){
-        String temporaryString = docNum.substring(0,3);
+    public static void equalsFirstDigits(String docNum) {
+        String temporaryString = docNum.substring(0, 3);
         boolean equals = temporaryString.equals("555");
         System.out.println(equals);
     }
 
-    public static void equalsLastBlock(String docNum){
+    public static void equalsLastBlock(String docNum) {
         String[] split = docNum.split("-");
         boolean equals = split[4].equals("1a2b");
         System.out.println(equals);
