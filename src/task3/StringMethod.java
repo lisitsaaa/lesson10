@@ -16,14 +16,13 @@ public class StringMethod {
 
             for (int j = 0; j < lettersArray.length; j++) {
                 int findSimilarLetters = word.indexOf(lettersArray[j], j + 1);
-
+                
                 if (findSimilarLetters >= 0) {
                     stringBuilderWord.deleteCharAt(j);
                     word = stringBuilderWord.toString();
                     j--;
                 }
             }
-            
             if (word.length() < min) {
                 min = word.length();
                 res = count;
