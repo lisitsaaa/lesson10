@@ -23,7 +23,7 @@ public class StringMethod {
                     j--;
                 }
             }
-            
+
             if (word.length() < min) {
                 min = word.length();
                 res = count;

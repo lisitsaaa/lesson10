@@ -7,7 +7,6 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.print("enter the word: ");
         String mainString = input.nextLine();
-
         StringMethod.lettersDuplicate(mainString);
     }
 }
